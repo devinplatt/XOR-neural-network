@@ -35,7 +35,7 @@ ex = [ex1, ex2, ex3, ex4]
 class net:
 
   def __init__(self):
-    self.eta = .5
+    self.eta = 10  # TODO: automate search for optimal parameter values
     self.w = [random.random() for _ in range(7)]
     self.b = [random.random() for _ in range(4)]
     self.delta = [0, 0, 0, 0]
